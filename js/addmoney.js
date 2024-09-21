@@ -1,15 +1,16 @@
 
 function addmoney(){
+    showelement('ADDmoney');
+    hiddenelement('Payments');
     
-
-
 }
 
+function 
 
 
 function hiddenelement(elementID){
-    const show=document.getElementById(elementID);
-    show.classList.add('hidden');
+    const hiddne=document.getElementById(elementID);
+    hiddne.classList.add('hidden');
 }
 
 
