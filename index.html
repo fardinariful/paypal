@@ -68,27 +68,27 @@
 
       <div class=" grid grid-cols-3 gap-4 mt-4 place-items-center">
         <!-- item 1 -->
-         <div class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
+         <div onclick="addmoney()"  class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
           <img class="mt-3" src="./Image/wallet 1.png" alt="">
           <p class="mt-3 mb-3 text-[#080808B2]">Add money</p>
          </div>
         <!-- item 2 -->
-        <div class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
+        <div onclick="addhidden()"  class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
           <img class="mt-3" src="./Image/send 1.png" alt="">
           <p class="mt-3 mb-3 text-[#080808B2]">Cashout</p>
          </div>
         <!-- item 3 -->
-        <div class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
+        <div onclick="addhidden()" class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
           <img class="mt-3" src="./Image/money 1.png" alt="">
           <p class="mt-3 mb-3 text-[#080808B2]">Transfer Money</p>
          </div>
         <!-- item 4 -->
-        <div class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
+        <div onclick="addhidden()" class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
           <img class="mt-3" src="./Image/financial 1.png" alt="">
           <p class="mt-3 mb-3 text-[#080808B2]">Get Bonus</p>
          </div>
         <!-- item 5 -->
-        <div class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
+        <div onclick="addhidden()" class="flex flex-col items-center text-center border border-[#0808081A] rounded-xl w-52">
           <img class="mt-3" src="./Image/purse 1.png" alt="">
           <p class="mt-3 mb-3 text-[#080808B2]">Pay Bill</p>
          </div>
@@ -100,7 +100,7 @@
 
       </div>
 <!-- Payment page/-----1st page------- -->
-      <div class="bg-[#F4F5F7] min-h-screen px-10 mt-10 hidden">
+      <div id="Payments" class="bg-[#F4F5F7] min-h-screen px-10 mt-10">
 
         <div class="flex flex-row justify-between py-10">
           <p class="font-semibold">Latest Payment</p>
@@ -180,7 +180,7 @@
 
       </div>
 <!-- Add Money/--------2nd page-------- -->
-       <div class="min-h-screen px-10 mt-14 bg-white hidden">
+       <div id="ADDmoney" class="min-h-screen px-10 mt-14 bg-white hidden">
 
           <p class="font-semibold ">Add Money</p>
     
@@ -216,7 +216,7 @@
 
 <!--Cash Out/3rd page  -->
     
-      <div class="min-h-screen px-10 mt-14 bg-white hidden">
+      <div id="cashout" class="min-h-screen px-10 mt-14 bg-white hidden">
 
         <p class="font-semibold ">Cash Out</p>
   
@@ -246,7 +246,7 @@
      
  <!--Transfer Money/4th page  -->
  
-  <div class="min-h-screen px-10 mt-14 bg-white hidden">
+  <div id="Transfer_money" class="min-h-screen px-10 mt-14 bg-white hidden">
 
     <p class="font-semibold ">Transfer Money</p>
 
@@ -275,7 +275,7 @@
  </div>
 
  <!-- Get bouns/ 5th page -->
- <div class="min-h-screen px-10 mt-14 bg-white hidden">
+ <div id="getBouns" class="min-h-screen px-10 mt-14 bg-white hidden">
 
   <p class="font-semibold ">Get bouns</p>
 
@@ -293,7 +293,7 @@
 </div>
 
 <!--Pay Bill/6th page  -->
-<div class="min-h-screen px-10 mt-14 bg-white">
+<div class="min-h-screen px-10 mt-14 bg-white hidden">
 
   <p class="font-semibold ">Pay Bill</p>
 
@@ -327,5 +327,6 @@
 </div>
 </div>
     </main>
+    <script src="./js/addmoney.js"></script>
 </body>
 </html>
